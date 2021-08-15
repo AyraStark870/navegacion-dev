@@ -1,4 +1,4 @@
-const inputLupa = document.querySelector('.input-lupa');
+/*const inputLupa = document.querySelector('.input-lupa');
 const navegacion = document.querySelector('#main-menu');
 let elemento;
 
@@ -18,4 +18,4 @@ navegacion.addEventListener('click', (e) =>{
     console.log(elemento);
     elemento.classList.remove('blue')
   }
-})
+})*/
