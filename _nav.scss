@@ -13,48 +13,102 @@ img{
 }
 
 .header-contenido{
-  max-width: 1280px;
-  height: 58px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo-buscar{
+  max-width: 1280px;
+  height: 48px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+    @media (min-width: 1300px){
+      max-width: 1250px;
+    }
+}
+.enlace-hamburguesa{
+  margin-left: 5px;
+  display: block;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  &:hover{
+    background-color: $mainbg;
+  }
+   @media (min-width: 768px){
+    display: none;
+   }
+}
+.logo-buscar{
+
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
   .enlace-logo{
-    border-radius: 4px;
-    display: block;
-    img{
-      width: 50px;
-      height: 40px;
-      border-radius: 4px;
+    display: flex;
+     justify-content: center;
+      img{
+        width: 50px;
+        height: 40px;
+        border-radius: 4px;
+        // &:hover{
+        //   background-color: opacity($color: #2b2929);
+        // }
     }
   }
+
 }
 
+
 /*Estilos buscar*/
-.input-lupa{
-  margin-left: 20px;
+.input-lupa {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  display: none;
+
+  @media (min-width: 768px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 }
 
 form{
-  min-width: 400px;
+  min-width: 410px;
   position: relative;
+  height: 45px;
+
+
   .svg-lupa{
     position: absolute;
     top: 8px;
     right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background-color: #dcdfe0;
+    }
     svg{
-      fill: #eee;
+      fill: #4d5760;
     }
   }
   input{
+    background-color: #eef0f1;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 7px;
     width: 100%;
+    height: 100%;
+
     padding: 10px;
+     border: 1px solid #b5bdc4;
   }
 }
 
@@ -68,9 +122,49 @@ form{
 .navegacion ul .button{
   text-decoration: none;
   display: block;
-  background-color: blue;
+  background-color: #3b49df;
+  border-radius: 5px;
   color: white;
+  font-weight: 500px;
   padding: 10px;
+  width: 90px;
+  display: none;
+  transition-property: background-color;
+  transition-duration: 1s;
+    &:hover{
+      background-color: #2b36ab;
+    }
+
+    @media (min-width: 768px){
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    }
+
+}
+.navegacion .round{
+  svg{
+
+    fill: #4d5760;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  &:hover{
+    background-color: $mainbg;
+  }
+  &:last-of-type{
+    img{
+      border-radius: 50%;
+        &:hover{
+        border: 1px solid white;
+        }
+    }
+
+  }
 }
 
 /*Estilos antiguos
