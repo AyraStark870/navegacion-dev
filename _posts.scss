@@ -1,0 +1,8 @@
+.post {
+  @include center-item();
+  margin: 5px;
+  background-color: #FFF;
+  border: 1px solid lightgray;
+  min-height: 300px;
+  border-radius: 5px;
+}

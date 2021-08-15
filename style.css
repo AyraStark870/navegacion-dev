@@ -1,0 +1,345 @@
+.avatar .img {
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+}
+
+.avatar .img:hover {
+  border: 2px solid white;
+}
+
+#main-menu {
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  border-bottom: .5px solid #B2B1B9;
+}
+
+#main-menu > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-menu #logo img {
+  width: 50px;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  #main-menu #logo img {
+    margin-left: -7px;
+  }
+}
+
+.right-buttons {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 10px;
+  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+  .right-buttons {
+    width: 500px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 30px;
+  }
+}
+
+.right-buttons svg {
+  fill: #363d44;
+}
+
+.right-buttons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2px 3px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.right-buttons div:hover {
+  background-color: #eef0f1;
+}
+
+#hamburguesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+#hamburguesa:hover {
+  background-color: #eef0f1;
+}
+
+@media (min-width: 768px) {
+  #hamburguesa {
+    display: none;
+  }
+}
+
+#logo {
+  border-radius: 10%;
+}
+
+#logo img {
+  margin-top: 2px;
+  height: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  #logo {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 1020px) {
+  #logo {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #logo {
+    margin-left: 4vw;
+    margin-right: 2vw;
+  }
+}
+
+#btn-azul {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: #3b49df;
+  color: white;
+  font-size: 16px;
+  border-radius: 6%;
+  border: none;
+  padding: 8px 6px;
+  font-weight: 500px;
+  display: none;
+  height: 40px;
+  width: 110px;
+  -webkit-transition-property: border-radius, background-color;
+  transition-property: border-radius, background-color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+#btn-azul:hover {
+  background-color: #2b36ab;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #btn-azul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  #lupita {
+    display: none;
+  }
+}
+
+#main-menu .input-lupa {
+  background-color: #f9fafa;
+  width: 400px;
+  height: 40px;
+  display: none;
+  margin: 5px auto;
+  border-radius: 7px;
+  border: 1px solid #959da5;
+}
+
+#main-menu .input-lupa .svg-lupa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #363d44;
+}
+
+#main-menu .input-lupa input {
+  width: 360px;
+  height: 38px;
+  outline: none;
+  border: 0;
+  background-color: #f9fafa;
+}
+
+@media (min-width: 768px) {
+  #main-menu .input-lupa {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*
+@mixin table{
+   @media(min-width:758px){
+     @content
+   }
+}
+*/
+aside {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  aside {
+    display: block;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #aside-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 235px;
+    min-width: 235px;
+    background-color: #FFF;
+    border: 1px solid lightgray;
+  }
+  #aside-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 320px;
+    min-width: 320px;
+    background-color: #FFF;
+    border: 1px solid lightgray;
+  }
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+  background-color: #FFF;
+  border: 1px solid lightgray;
+  min-height: 300px;
+  border-radius: 5px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  background-color: #eef0f1;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main {
+  width: 100%;
+}
+
+main .posts-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style.css.map */
